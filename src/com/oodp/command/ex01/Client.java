@@ -1,24 +1,23 @@
 package com.oodp.command.ex01;
 
+import com.oodp.command.ex01.command.AlarmOnCommand;
+import com.oodp.command.ex01.command.Command;
+import com.oodp.command.ex01.command.LampOnCommand;
+
 public class Client {
     public static void main(String[] args) {
-        // 버튼을 누르는 동작에 따라 다른 기능 실행하기 위한 리팩터링
-        /*
         Lamp lamp = new Lamp();
-        Button button = new Button(lamp);
-        button.pressed();
-        */
+        Command lampOnCommand = new LampOnCommand(lamp);
 
-        Lamp lamp = new Lamp() ;
         Alarm alarm = new Alarm();
-        Button button = new Button(lamp, alarm);
+        Command alarmOnCommand = new AlarmOnCommand(alarm);
 
-        // 모드 설정 - 램프
-        button.setMode(Mode.LAMP);
-        button.pressed();
+        // 램프 켜는 커맨드 설정
+        Button button1 = new Button(lampOnCommand);
+        button1.pressed();
 
-        // 모드 설정 - 알람
-        button.setMode(Mode.ALARM);
-        button.pressed();
+        // 알람 켜는 커맨드 설정
+        Button button2 = new Button(alarmOnCommand);
+        button2.pressed();
     }
 }
