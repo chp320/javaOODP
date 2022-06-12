@@ -13,6 +13,7 @@ public class LGMotor extends Motor {
 
     private void moveLGMotor(Direction direction) {
         // LGMotor를 구동시킴
+        System.out.println("LGMotor 구동 ...");
     }
 
     // move 메서드는 HyundaiMotor와 상이
