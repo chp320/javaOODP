@@ -3,33 +3,18 @@ package com.oodp.observer.ex03;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ScoreRecord {
+public class ScoreRecord extends Subject {
+
     private List<Integer> scores = new ArrayList<Integer>();
 
-    // 복수 개의 DataSheetView - 성적 3개, 성적 5개 등 n개 출력을 위함
-    private List<DataSheetView> dataSheetViews = new ArrayList<DataSheetView>();
-    private MinMaxView minMaxView;
-
-    // DataSheetView 추가
-    public void addDataSheetView(DataSheetView dataSheetView) {
-        dataSheetViews.add(dataSheetView);
-    }
-
-    // MinMaxView 설정
-    public void setMinMaxView(MinMaxView minMaxView) {
-        this.minMaxView = minMaxView;
-    }
-
-    // 성적 등록
+    /**
+     * @param score
+     * 파라미터로 전달받은 score를 리스트에 저장 후 변경 사항을 Subject를 통해 Observer로 전달한다.
+     */
     public void addScore(int score) {
         scores.add(score);
 
-        // 각 DataSheetView에 통보
-        for (DataSheetView dataSheetView : dataSheetViews) {
-            dataSheetView.update();
-        }
-
-        minMaxView.update();
+        notifyObservers();
     }
 
     public List<Integer> getScores() {

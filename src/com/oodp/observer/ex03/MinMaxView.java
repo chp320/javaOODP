@@ -1,11 +1,10 @@
 package com.oodp.observer.ex03;
 
-import com.oodp.observer.ex02.ScoreRecord;
-
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MinMaxView {
+public class MinMaxView implements Observer {
 
     private ScoreRecord scoreRecord;
 
@@ -13,14 +12,15 @@ public class MinMaxView {
         this.scoreRecord = scoreRecord;
     }
 
+    @Override
     public void update() {
-        List<Integer> record = scoreRecord.getScoreRecord();
+        List<Integer> record = scoreRecord.getScores();
         displayMinMax(record);
     }
 
     private void displayMinMax(List<Integer> record) {
         int min = Collections.min(record, null);
         int max = Collections.max(record, null);
-        System.out.println("Min: " + min + " max: " + max);
+        System.out.println("Min: " + min + ", Max: " + max);
     }
 }

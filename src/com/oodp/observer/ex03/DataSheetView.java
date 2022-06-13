@@ -1,10 +1,8 @@
 package com.oodp.observer.ex03;
 
-import com.oodp.observer.ex01.ScoreRecord;
-
 import java.util.List;
 
-public class DataSheetView {
+public class DataSheetView implements Observer {
 
     private ScoreRecord scoreRecord;
     private int viewCount;
@@ -14,16 +12,19 @@ public class DataSheetView {
         this.viewCount = viewCount;
     }
 
-    // 점수의 변경 관리
+    @Override
     public void update() {
-        List<Integer> record = scoreRecord.getScoreRecord();        // 점수 조회
-        displayScores(record, viewCount);                           // 조회된 점수를 viewCount 만큼 출력
+        // 점수 조회
+        List<Integer> record = scoreRecord.getScores();
+
+        // 조회된 점수를 viewCount 만큼 출력
+        displayScores(record, viewCount);
     }
 
     private void displayScores(List<Integer> record, int viewCount) {
-        System.out.println("List of " + viewCount + " entries: ");
+        // 전달된 viewCount만큼 출력
         for (int i = 0; i < viewCount && i < record.size(); i++) {
-            System.out.println(record.get(i));
+            System.out.println(record.get(i) + " ");
         }
         System.out.println();
     }
