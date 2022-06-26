@@ -1,0 +1,5 @@
+1. Template Method Patter 은 AbstractClass 에서 abstract method를 정의하고, ConcreteClass 에서 구체적으로 구현한다.
+
+2. Template Method Pattern vs Strategy Pattern
+   - Template Method Pattern : '상속' 을 이용해서 프로그램의 동작을 변경. 상위 클래스에서 프로그램 동작의 큰 흐름을 결정, 하위 클래스에서 구체적인 흐름을 결정
+   - Strategy Pattern : '위임'을 이용해서 프로그램의 동작을 변경. 프로그램 일부분 변경하는게 아니라 알고리즘 "전체"를 완전히 변경
