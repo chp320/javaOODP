@@ -1,5 +1,8 @@
 package com.oodp.lab.FMvsS.factoryMethod;
 
+/**
+ * reference - https://dzone.com/articles/strategy-vs-factory-design-pattern-in-java
+ */
 public class Main {
 
     public static void main(String[] args) {
