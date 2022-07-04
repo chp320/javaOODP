@@ -2,7 +2,7 @@ package com.gof.structural.adapter.internet;
 
 public class AudioPlayer implements MediaPlayer {
 
-//    MediaAdapter mediaAdapter;
+    MediaAdapter mediaAdapter;
 
     @Override
     public void play(String audioType, String fileName) {
@@ -12,7 +12,7 @@ public class AudioPlayer implements MediaPlayer {
 
         // 'vlc'나 'mp4' 포맷은 MediaAdapter로 처리한다.
         else if (audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("mp4")) {
-            MediaAdapter mediaAdapter = new MediaAdapter(audioType);
+            mediaAdapter = new MediaAdapter(audioType);
             mediaAdapter.play(audioType, fileName);
         }
     }
