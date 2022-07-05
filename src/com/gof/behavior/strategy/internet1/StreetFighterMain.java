@@ -1,5 +1,6 @@
 package com.gof.behavior.strategy.internet1;
 
+// reference - https://www.geeksforgeeks.org/strategy-pattern-set-2/?ref=lbp
 public class StreetFighterMain {
     public static void main(String[] args) {
         // let's make some behaviors first
