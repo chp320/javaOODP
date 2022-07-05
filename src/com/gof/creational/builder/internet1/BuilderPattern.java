@@ -8,6 +8,7 @@ public class BuilderPattern {
                 .setName("MISTAKE")
                 .setFavoriteAnimal("cat")
                 .setFavoriteColor("black")
+                .setAge(16)
                 .build() ;
         System.out.println(result.getPersonInfo());
     }
