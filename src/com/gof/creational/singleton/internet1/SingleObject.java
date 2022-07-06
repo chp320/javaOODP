@@ -6,7 +6,9 @@ public class SingleObject {
     private static SingleObject instance = new SingleObject();
 
     // make constructor private so that this class cannot be instantiated
-    private SingleObject(){}
+    private SingleObject(){
+        System.out.println("Create Instance!");
+    }
 
     // get the only object available
     public static SingleObject getInstance() {
