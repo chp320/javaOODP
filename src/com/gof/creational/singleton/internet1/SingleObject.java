@@ -12,11 +12,11 @@ public class SingleObject {
 
     // get the only object available
     public static SingleObject getInstance() {
-        return instance;
+         return instance;
     }
 
     public void showMessage() {
-        System.out.println("Hello World!");
+         System.out.println("Hello World!");
     }
 
 }
