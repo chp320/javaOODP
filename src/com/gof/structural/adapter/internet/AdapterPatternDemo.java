@@ -7,6 +7,9 @@ package com.gof.structural.adapter.internet;
  * -> AudioPlayer를 호출하는 client단에서는 사용할 'mp4', 'vlc' 만 단순 추가하면 된다.
  * 방향: AudioPlayer 클래스에서는 'mp4', 'vlc' 포맷은 MediaAdapter에서 처리할 수 있도록 위임한다.
  *      MediaAdapter 클래스에서는 처리할 파일 형식에 따라 play 메서드를 실행한다.
+ * reference:
+ * https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm
+ * https://dailyheumsi.tistory.com/189?category=855210
  */
 public class AdapterPatternDemo {
     public static void main(String[] args) {
