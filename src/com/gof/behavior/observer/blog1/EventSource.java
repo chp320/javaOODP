@@ -15,6 +15,7 @@ import java.util.Observable;    /* 옵저버에게 신호를 보내는 주체 */
  * 참고) https://m.blog.naver.com/dktmrorl/222091486735
  * 참고) https://ko.wikipedia.org/wiki/%EC%98%B5%EC%84%9C%EB%B2%84_%ED%8C%A8%ED%84%B4
  */
+// subject
 public class EventSource extends Observable implements Runnable {
     @Override
     public void run() {

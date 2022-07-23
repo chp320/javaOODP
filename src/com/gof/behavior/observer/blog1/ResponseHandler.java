@@ -3,6 +3,7 @@ package com.gof.behavior.observer.blog1;
 import java.util.Observable;
 import java.util.Observer;  /* 옵저버 */
 
+// observer
 public class ResponseHandler implements Observer {
 
     private String resp ;
