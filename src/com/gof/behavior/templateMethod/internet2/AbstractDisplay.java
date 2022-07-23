@@ -1,4 +1,4 @@
-package com.gof.behavior.templateMethod;
+package com.gof.behavior.templateMethod.internet2;
 
 /**
  * Template Method 패턴은 '추상 메서드'를 사용해서 처리 골격(와꾸)를 결정하고 sub class에서 구체화하는 방식

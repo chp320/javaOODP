@@ -1,4 +1,4 @@
-package com.gof.behavior.templateMethod;
+package com.gof.behavior.templateMethod.internet2;
 
 public class CharDisplay extends AbstractDisplay {
 
