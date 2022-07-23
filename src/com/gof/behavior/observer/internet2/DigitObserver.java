@@ -1,4 +1,4 @@
-package com.gof.behavior.observer;
+package com.gof.behavior.observer.internet2;
 
 public class DigitObserver implements Observer {
     @Override

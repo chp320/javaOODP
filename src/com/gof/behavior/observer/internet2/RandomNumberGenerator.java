@@ -1,4 +1,4 @@
-package com.gof.behavior.observer;
+package com.gof.behavior.observer.internet2;
 
 import java.util.Random;
 
