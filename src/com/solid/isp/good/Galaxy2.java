@@ -1,4 +1,4 @@
-package com.solid.isp.after;
+package com.solid.isp.good;
 
 public class Galaxy2 implements SmartPhone, Galaxy2Function {
     @Override

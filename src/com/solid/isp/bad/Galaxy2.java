@@ -1,4 +1,4 @@
-package com.solid.isp.before;
+package com.solid.isp.bad;
 
 public class Galaxy2 implements SmartPhone {
     @Override
