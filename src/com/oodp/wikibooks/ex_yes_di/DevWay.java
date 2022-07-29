@@ -7,5 +7,6 @@ package com.oodp.wikibooks.ex_yes_di;
  * ...
  */
 public interface DevWay {
+
     String getWay();
 }

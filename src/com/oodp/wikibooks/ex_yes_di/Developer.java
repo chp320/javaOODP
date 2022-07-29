@@ -7,7 +7,7 @@ public class Developer {
     public Developer(DevWay devWay) {
         this.devWay = devWay;
     }
-
+    
     public String getDevWay() {
         return "개발 방법: " + devWay.getWay();
     }
